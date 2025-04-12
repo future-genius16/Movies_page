@@ -10,7 +10,7 @@ const API_URL = 'https://api.themoviedb.org/3/search/movie?query=mafia';
 fetch(API_URL, {
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZDM5MGE5YWQzNDUwZTQyYTc5OWI5YTdjOGYzMDI1YyIsInN1YiI6IjY1ODk0OTc0YmU4MDAyMDBhOGFjNzU1NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WABMO4BdT2rGPCFi2wwSKUB1X1uIfxOMZEtQ-ZOSnU8'
+    Authorization: 'Bearer f31c67771e8ce14539ccde4f7c2c4c73'
   }
 })
   .then(res => res.json())
