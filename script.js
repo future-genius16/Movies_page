@@ -1,4 +1,3 @@
-console.log("Script is working!");
 const moviesEl = document.querySelector('#movies');
 const popup = document.querySelector('#popup');
 const closeBtn = document.querySelector('#closePopup');
