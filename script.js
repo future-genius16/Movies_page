@@ -5,10 +5,14 @@ const popupTitle = document.querySelector('#popupTitle');
 const popupOverview = document.querySelector('#popupOverview');
 const popupRating = document.querySelector('#popupRating');
 
-const API_KEY = '5d390a9ad3450e42a799b9a7c8f3025c';
-const API_URL = `https://api.themoviedb.org/3/search/movie?query=mafia&api_key=${API_KEY}`;
+const API_URL = 'https://api.themoviedb.org/3/search/movie?query=mafia';
 
-fetch(API_URL)
+fetch(API_URL, {
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZDM5MGE5YWQzNDUwZTQyYTc5OWI5YTdjOGYzMDI1YyIsInN1YiI6IjY1ODk0OTc0YmU4MDAyMDBhOGFjNzU1NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WABMO4BdT2rGPCFi2wwSKUB1X1uIfxOMZEtQ-ZOSnU8'
+  }
+})
   .then(res => res.json())
   .then(data => {
     data.results.forEach(movie => {
